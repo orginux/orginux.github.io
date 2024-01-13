@@ -1,4 +1,57 @@
 baseURL = 'https://orginux.github.io'
 languageCode = 'en-us'
 title = 'orginux'
-theme = 'holy'
+theme = 'gokarna'
+enableRobotsTXT = true
+
+[menu]
+  [[menu.main]]
+    # Unique identifier for a menu item
+    identifier = "posts"
+
+    url = "/posts/"
+
+    # You can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+
+    # You can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+
+    # Display name
+    name = "Posts"
+
+    # Weights are used to determine the ordering
+    weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+ [[menu.main]]
+    identifier = "portfolio"
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = 4
+  [[menu.main]]
+    identifier = "github"
+    url = "https://github.com/orginux"
+    weight = 5
+    # Using feather-icons
+    pre = "<span data-feather='github'></span>"
+
+
+[params]
+metaKeywords = ["clickhouse", "go", "devops"]
+# showPostsOnHomePage = "popular" # "recent" or "popular"
+dateFormat = "2006-01-02"
+togglePreviousAndNextButtons = "true"
+customHeadHTML = '''
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0QBP117RR3"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-0QBP117RR3');
+</script>
+'''
