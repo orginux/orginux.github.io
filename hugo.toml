@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'orginux'
 theme = 'gokarna'
 enableRobotsTXT = true
+pygmentsStyle = "dracula"
 
 [menu]
   [[menu.main]]
@@ -48,7 +49,7 @@ enableRobotsTXT = true
 
 [params]
 metaKeywords = ["clickhouse", "go", "devops"]
-# showPostsOnHomePage = "popular" # "recent" or "popular"
+showPostsOnHomePage = "recent" # "recent" or "popular"
 dateFormat = "2006-01-02"
 togglePreviousAndNextButtons = "true"
 customHeadHTML = '''

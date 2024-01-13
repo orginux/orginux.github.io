@@ -1,9 +1,9 @@
 +++
 title = 'First Post'
-date = 2024-01-13T20:17:47+01:00
+date = 2024-01-13T21:15:08+01:00
 draft = false
-tags = ['first-post']
 type = 'post'
+tags = ['update']
 +++
 
 This is my first post.

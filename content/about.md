@@ -1,12 +1,8 @@
 +++
 title = 'About'
-date = 2024-01-13T20:28:13+01:00
+date = 2024-01-13T21:20:26+01:00
 draft = false
-tags = ['about']
+type = 'page'
 +++
 
-This is my about page.
-
-```go
-fmt.Println("Hello World")
-```
+Nothing to see here.
