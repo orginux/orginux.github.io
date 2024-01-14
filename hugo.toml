@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'orginux'
 theme = 'gokarna-orx'
 enableRobotsTXT = true
-pygmentsStyle = "dracula"
+pygmentsStyle = "swapoff"
 
 [menu]
   [[menu.main]]
@@ -50,6 +50,6 @@ customHeadHTML = '''
 '''
 
 # common
-accentColor = "#24B12B"
+accentColor = "#2AC3DE"
 togglePreviousAndNextButtons = "true"
 dateFormat = "2006-01-02"
