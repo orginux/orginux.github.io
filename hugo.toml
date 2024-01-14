@@ -34,11 +34,6 @@ pygmentsStyle = "dracula"
     name = "About"
     url = "/about/"
     weight = 3
- [[menu.main]]
-    identifier = "portfolio"
-    name = "Portfolio"
-    url = "/portfolio/"
-    weight = 4
 
 [params]
 # index page
