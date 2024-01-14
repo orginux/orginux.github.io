@@ -39,13 +39,6 @@ pygmentsStyle = "dracula"
     name = "Portfolio"
     url = "/portfolio/"
     weight = 4
-  [[menu.main]]
-    identifier = "github"
-    url = "https://github.com/orginux"
-    weight = 5
-    # Using feather-icons
-    pre = "<span data-feather='github'></span>"
-
 
 [params]
 # index page
