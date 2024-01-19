@@ -1,11 +1,9 @@
 +++
-title = 'Convert CSV to Parquet'
+title = 'Convert CSV to Parquet Using ClickHouse'
 date = 2024-01-16T20:56:56+01:00
 tags = ['snippets', 'clickhouse']
 type = 'post'
 +++
-
-# Converting Parquet to CSV Using ClickHouse
 
 ## Download a Parquet file from S3
 
