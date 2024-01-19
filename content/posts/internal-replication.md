@@ -15,7 +15,6 @@ The Distributed table inserts data only into one of underlying table replicas, a
 ### internal_replication = false (default)
 This option can be useful when you're using non-Replicated tables and insert data into Distributed table.
 Writes down data to all underlying replicas if we do insert in a Distributed table. In this case, the Distributed table replicates data itself.
-This approach may genreate duplicates.
 
 ![view](/internal_replication/global.png)
 
@@ -98,3 +97,8 @@ On CH-B (`internal_replication = true`) the result is:
 │       0 │
 └─────────┘
 ```
+
+### Links
+- [ClickHouse internal_replication setting](https://simpl1g.medium.com/clickhouse-internal-replication-setting-b6d8c7c2a9f2)
+- [Distributed writing data](https://clickhouse.com/docs/en/engines/table-engines/special/distributed#distributed-writing-data)
+- [Replication and Sharding configuration](https://clickhouse.com/docs/en/architecture/replication#replication-and-sharding-configuration)
