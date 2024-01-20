@@ -16,7 +16,7 @@ The Distributed table inserts data only into one of underlying table replicas, a
 This option can be useful when you're using non-Replicated tables and insert data into Distributed table.
 Writes down data to all underlying replicas if we do insert in a Distributed table. In this case, the Distributed table replicates data itself.
 
-![view](/internal_replication/global.png)
+![diff](/images/internal_replication/global.png)
 
 ## Simple example
 ### Config

@@ -5,6 +5,8 @@ tags = ['snippets', 'clickhouse']
 type = 'post'
 +++
 
+![view](/images/csv-parquet.png)
+
 ## Download a Parquet file from S3
 
 To convert a CSV to Parquet, we can use clickhouse-local:
@@ -12,7 +14,7 @@ To convert a CSV to Parquet, we can use clickhouse-local:
 clickhouse-local
 ```
 
-And then run the following query:
+Then run the following query:
 ```sql
 SELECT *
 FROM s3('https://datasets-documentation.s3.eu-west-3.amazonaws.com/house_parquet/house_0.parquet')
@@ -38,7 +40,7 @@ Again, we can use clickhouse-local:
 clickhouse-local
 ```
 
-And then run the following query:
+Then run the following query:
 ```sql
 SELECT *
 FROM `house_0.parquet`
