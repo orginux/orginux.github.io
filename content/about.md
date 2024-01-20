@@ -11,3 +11,4 @@ Feel free to have a look around my [LinkedIn profile](https://www.linkedin.com/i
 
 My open source contributions are made on my [Github profile](https://github.com/orginux).
 
+I also sometimes solve problems on [LeetCode](https://leetcode.com/orginux/).
