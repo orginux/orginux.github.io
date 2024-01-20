@@ -2,7 +2,7 @@
 title = 'Internal Replication setting in ClickHouse'
 date = 2024-01-19T20:02:41+01:00
 type = 'post'
-draft = true
+draft = false
 tags = ['clickhouse', 'settings']
 +++
 
@@ -21,6 +21,7 @@ Writes down data to all underlying replicas if we do insert in a Distributed tab
 ## Simple example
 ### Config
 We have two ClickHouse clusters: CH-A and CH-B:
+
 For shards of CH-A we set `internal_replication = false`:
 ```xml
             ...
@@ -40,9 +41,9 @@ And for shards of CH-B we set `internal_replication = true`:
 ```
 
 
-You can use my [clickhouse-cluster-compose](https://github.com/orginux/clickhouse-cluster-compose) project to deploy this example.
+You can use my [clickhouse-cluster-compose](https://github.com/orginux/clickhouse-cluster-compose) project to deploy this example. You just need to change the setting in [config/clickhouse/config.d/remote_servers.xml](https://github.com/orginux/clickhouse-cluster-compose/blob/main/config/clickhouse/config.d/remote_servers.xml) file.
 
-Table sutrucure will be the same for both clusters, difference only in `internal_replication` setting.
+Table sutrucure and all other settings will be the same for both clusters, difference only in `internal_replication` setting.
 ### Create tables:
 ```sql
 CREATE TABLE table_local ON CLUSTER '{cluster}'
@@ -98,7 +99,13 @@ On CH-B (`internal_replication = true`) the result is:
 └─────────┘
 ```
 
+### Conclusion
+As you can see, CH-A has two insert queries for each replica, because the Distributed table replicates the data.
+And CH-B only has the insert queries for a single replica, that means we have the rows only on one replica.
+To replicate the data on other replicas we need to use Replicated table engines. When one of the table replicas receives the write, it will be replicated to the other replicas throw ClickHouse Keeper.
+
 ### Links
 - [ClickHouse internal_replication setting](https://simpl1g.medium.com/clickhouse-internal-replication-setting-b6d8c7c2a9f2)
 - [Distributed writing data](https://clickhouse.com/docs/en/engines/table-engines/special/distributed#distributed-writing-data)
 - [Replication and Sharding configuration](https://clickhouse.com/docs/en/architecture/replication#replication-and-sharding-configuration)
+- [Data Replication](https://clickhouse.com/docs/en/engines/table-engines/mergetree-family/replication)
