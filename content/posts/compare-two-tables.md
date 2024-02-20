@@ -16,8 +16,9 @@ You can download the files from [Kaggle](https://www.kaggle.com/competitions/sto
 The files are the same, but `stores_2.csv` has one row less than `stores.csv`.
 
 ## Compare Two CSV Files
-As always, we will use `clickhouse-local` for this kind of operations.
+As always, we will use `clickhouse-local` for this kind of operation.
 
+### Number of Rows
 First, let's check the number of rows in each file:
 ```sql
 WITH
@@ -44,7 +45,11 @@ Output:
 ```
 
 As we can see, the number of rows is different.
+
+
+### Find the Differences
 Now, let's find the row that is in `stores.csv` but not in `stores_2.csv`:
+
 ```sql
 SELECT *
 FROM file('stores.csv') AS s1
@@ -59,7 +64,9 @@ Output:
 └───────────┴───────┴───────────┴──────┴─────────┴──────────────┴─────────┴──────────┴─────────┴────────────┘
 ```
 
-If it neede you can store the differences in a table:
+### Store the Differences
+If needed, we can store the differences in a table:
+Copy
 ```sql
 CREATE TABLE differences
 ENGINE = Memory AS
