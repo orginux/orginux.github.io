@@ -5,10 +5,11 @@ draft = false
 type = 'page'
 +++
 
-Hi there, I’m Gorobets Denis.
+Denis Gorobets | Data Infrastructure Engineer
+Specializing in Real-Time Analytics Systems
 
-Feel free to have a look around my [LinkedIn profile](https://www.linkedin.com/in/orginux/).
-
-My open source contributions are made on my [Github profile](https://github.com/orginux).
-
-I also sometimes solve problems on [LeetCode](https://leetcode.com/orginux/).
+Connect with me:
+- LinkedIn: [Professional Network & Experience](https://www.linkedin.com/in/orginux/)
+- GitHub: [Open Source Contributions](https://github.com/orginux)
+- LeetCode: [Algorithm & Coding Challenges](https://leetcode.com/orginux/)
+- Kaggle: [Data Science Projects](https://www.kaggle.com/denisgorobets)
