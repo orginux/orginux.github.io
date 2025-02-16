@@ -7,6 +7,8 @@ pygmentsStyle = "swapoff"
 enableEmoji = true
 defaultContentLanguage = "en-gb"  # Added for proper date formatting
 
+googleAnalytics = 'G-0QBP117RR3'
+
 [markup]
   [markup.highlight]
     anchorLineNos = false
@@ -31,18 +33,16 @@ defaultContentLanguage = "en-gb"  # Added for proper date formatting
 
 [params]
   sitename = "Denis Gorobets"
-  defaultColor = "auto"  # Added theme color mode support
+  defaultColor = "auto"
   description = "Data Infrastructure Engineer | Architecting Scalable Real-Time Data Systems with ClickHouse"
-  mainSections = ['posts']  # Added to control main content sections
-  toc = true  # Enable table of contents globally
-  goToTop = true  # Enable "go to top" button
-  dateFormat = "2 Jan 2006"  # Added date format
-  rssFeedDescription = "summary"  # Added RSS feed configuration
+  mainSections = ['posts']
+  toc = true
+  rssFeedDescription = "summary"
   metaKeywords = ["clickhouse", "go", "devops", "linux", "duckdb", "golang", "data"]
 
 [menu]
   [[menu.main]]
-    pageRef = "/"  # Added pageRef for menu highlighting
+    pageRef = "/"
     identifier = "home"
     name = "Home"
     url = "/"
@@ -63,7 +63,7 @@ defaultContentLanguage = "en-gb"  # Added for proper date formatting
     weight = 3
 
 [params.author]
-  avatar = "avatar.jpg"  # Add your avatar image
+  avatar = "/images/orx.jpg"
   intro = "Gorobets Denis"
   name = "Gorobets Denis"
   description = "Data Infrastructure Engineer | Architecting Scalable Real-Time Data Systems with ClickHouse"
@@ -88,28 +88,6 @@ url = "mailto:orginux@pm.me"
 name = "rss"
 url = "index.xml"  # Added RSS feed
 
-# Privacy settings (added)
 [privacy]
-  [privacy.disqus]
-    disable = true
   [privacy.googleAnalytics]
-    disable = false  # Keep GA enabled since you're using it
-  [privacy.instagram]
-    disable = true
-  [privacy.twitter]
-    disable = true
-  [privacy.vimeo]
-    disable = true
-  [privacy.youtube]
-    disable = true
-
-# Google Analytics (moved to privacy section)
-customHeadHTML = '''
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0QBP117RR3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0QBP117RR3');
-</script>
-'''
+    disable = false
