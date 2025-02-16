@@ -1,8 +1,9 @@
 +++
 title = 'Convert Parquet to CSV Using ClickHouse'
 date = 2024-01-16T20:56:56+01:00
-tags = ['snippets', 'clickhouse', 'parquet', 'csv']
+tags = ['clickhouse', 'parquet']
 type = 'post'
+draft = false
 +++
 
 ![view](/images/csv-parquet.png)

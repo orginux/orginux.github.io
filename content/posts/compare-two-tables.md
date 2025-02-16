@@ -3,7 +3,7 @@ title = 'How to Compare Rows in Two CSV Files Using ClickHouse'
 date = 2024-02-20T21:46:09+01:00
 type = 'post'
 draft = false
-tags = ['clickhouse', 'snippets', 'csv']
+tags = ['clickhouse']
 +++
 
 ## Introduction

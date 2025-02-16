@@ -1,7 +1,7 @@
 +++
 title = 'About'
 date = 2024-01-13T21:20:26+01:00
-draft = false
+draft = true
 type = 'page'
 +++
 
