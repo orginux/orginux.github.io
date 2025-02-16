@@ -1,7 +1,7 @@
 baseURL = 'https://orginux.github.io'
 languageCode = 'en-us'
 title = 'orginux'
-theme = 'gokarna-orx'
+# theme = 'gokarna-orx'
 enableRobotsTXT = true
 pygmentsStyle = "swapoff"
 
@@ -39,11 +39,10 @@ pygmentsStyle = "swapoff"
 # index page
 avatarURL = "/images/orx.jpg"
 avatarSize = "size-xs"
-description = "Everything is permitted, Nothing is true"
 showPostsOnHomePage = "recent" # "recent" or "popular"
 
 # analitics
-metaKeywords = ["clickhouse", "go", "devops"]
+metaKeywords = ["clickhouse", "go", "devops", "linux", "duckdb", "golang", "data"]
 customHeadHTML = '''
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QBP117RR3"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-0QBP117RR3');
 </script>
@@ -53,3 +52,5 @@ customHeadHTML = '''
 accentColor = "#2AC3DE"
 togglePreviousAndNextButtons = "true"
 dateFormat = "2006-01-02"
+
+copyright-year = '2025'
