@@ -2,7 +2,8 @@
 title = 'Selecting Data from Google Cloud Storage Using ClickHouse'
 date = 2025-02-16T17:46:58+01:00
 draft =  false
-tags = ['clickhouse', 'gcs', 'gcp']
+tags = ['clickhouse', 'gcs', 'gcp', 'snippets']
+toc = false
 +++
 
 
