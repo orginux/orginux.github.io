@@ -1,13 +1,14 @@
 baseURL = 'https://orginux.github.io'
 languageCode = 'en-us'
-title = 'Denis Gorobets'  # Made more professional with full name
+title = 'Denis Gorobets'
 theme = "hugo-blog-awesome"
 enableRobotsTXT = true
-pygmentsStyle = "swapoff"
 enableEmoji = true
-defaultContentLanguage = "en-gb"  # Added for proper date formatting
+defaultContentLanguage = "en-gb"
 
-googleAnalytics = 'G-0QBP117RR3'
+[services]
+  [services.googleAnalytics]
+    ID = 'G-0QBP117RR3'
 
 [markup]
   [markup.highlight]
